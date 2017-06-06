@@ -3,9 +3,9 @@
 }
 
 #hero {
-  background-image: url(../images/brush.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: linear-gradient(rgba(150,150,150,.4), rgba(150,150,150,.4)), url(../images/brush.jpg);
+  background-position: center, center;
+  background-size: cover, cover;
   height: 60vh;
   text-align: center;
   display: -webkit-flex;
@@ -20,7 +20,7 @@
 }
 
 #hero-text {
-  color: #fefefe;
+  color: #fff;
   text-shadow: 1px 1px 2px #0a0a0a;
 }
 }
