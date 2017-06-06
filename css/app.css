@@ -3,7 +3,7 @@
 }
 
 #hero {
-  background-image: linear-gradient(rgba(150,150,150,.4), rgba(150,150,150,.4)), url(../images/brush.jpg);
+  background-image: linear-gradient(rgba(200,200,200,.4), rgba(200,200,200,.4)), url(../images/brush02.jpg);
   background-position: center, center;
   background-size: cover, cover;
   height: 60vh;
