@@ -1,12 +1,22 @@
-#title {
-  background-color: #aaa;
+/* *******************************************************************
+MULTI
+******************************************************************* */
+
+
+section, #pitch-why {
+  padding-top: 3rem;
 }
 
-#hero {
-  background-image: linear-gradient(rgba(200,200,200,.4), rgba(200,200,200,.4)), url(../images/brush02.jpg);
+
+/* *******************************************************************
+HERO
+******************************************************************* */
+
+#hero, #hero-two {
+  background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url(../images/brush02.jpg);
   background-position: center, center;
   background-size: cover, cover;
-  height: 60vh;
+  height: 70vh;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19,8 +29,289 @@
           justify-content: center;
 }
 
-#hero-text {
-  color: #fff;
-  text-shadow: 1px 1px 2px #0a0a0a;
+#hero-two {
+  background-image: url(../images/brett-and-chris.jpg);
+  background-position: top;
+  background-attachment: fixed;
+  height: 100vh;
 }
+
+
+#hero-text h2, #hero-text h3, .top-bar h2 {
+  font-family: orbitron;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 1px 3px #0a0a0a;
+}
+
+
+/* *******************************************************************
+TOP BAR
+******************************************************************* */
+
+
+
+.topbar-sticky-shrink {
+  padding: 2rem;
+  transition: padding 0.25s ease;
+  background: #2c3840;
+}
+
+.topbar-sticky-shrink .menu {
+  background: #2c3840;
+}
+
+.is-stuck .topbar-sticky-shrink {
+  padding: 1rem;
+  transition: padding 0.25s ease;
+}
+
+[data-sticky] {
+  width: 100%;
+}
+
+
+
+/* *******************************************************************
+PITCH
+******************************************************************* */
+
+#reasons > div {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+#reasons i {
+  display: block;
+  line-height: 0;
+  color: black;
+  font-size: 3rem;
+}
+
+#reasons span {
+  margin-left: 2rem;
+  display: block;
+}
+
+
+/* *******************************************************************
+SERVICES
+******************************************************************* */
+
+
+#services {
+  padding-bottom: 1rem;
+}
+
+
+/* *******************************************************************
+TESTIMONIALS
+******************************************************************* */
+
+
+#testimonials {
+  padding-top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("../images/brett-and-chris.jpg");
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+#testimonials > div:first-of-type {
+  color: #fefefe;
+  padding-top: 3rem;
+}
+
+#testimonials h2 {
+  text-align: center;
+}
+
+.testimonial-slider-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("../images/brett-and-chris.jpg");
+  background-position: center top;
+  background-attachment: fixed;
+  padding: 4rem 1rem;
+  color: #fefefe;
+  height: 65vh;
+}
+
+.testimonial-slider-container .orbit-previous,
+.testimonial-slider-container .orbit-next {
+  color: #fefefe;
+  z-index: 0;
+}
+
+.testimonial-slider-container .orbit-previous:hover, .testimonial-slider-container .orbit-previous:active, .testimonial-slider-container .orbit-previous:focus,
+.testimonial-slider-container .orbit-next:hover,
+.testimonial-slider-container .orbit-next:active,
+.testimonial-slider-container .orbit-next:focus {
+  background-color: transparent;
+}
+
+.testimonial-slider-container .orbit-previous {
+  left: -1rem;
+}
+
+.testimonial-slider-container .orbit-next {
+  right: -1rem;
+}
+
+.testimonial-slider-container .testimonial-slide {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonial-slider-container .testimonial-slide-content {
+  padding: 1rem 1.5rem;
+}
+
+@media screen and (min-width: 40em) {
+  .testimonial-slider-container .testimonial-slide-content {
+    padding: 1rem 4rem;
+  }
+}
+
+.testimonial-slider-container .profile-pic {
+  max-width: 225px;
+}
+
+.testimonial-slider-container .testimonial-slide-text {
+  padding-left: 3rem;
+}
+
+.testimonial-slider-container .testimonial-slide-quotation {
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.testimonial-slider-container .testimonial-slide-quotation::before {
+  content: "“";
+  font-size: 6rem;
+  color: #fefefe;
+  position: absolute;
+  top: -3rem;
+  left: -3rem;
+}
+
+.testimonial-slider-container .testimonial-slide-author-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .testimonial-slider-container .testimonial-slide-author-container .testimonial-slide-author-info {
+    margin-left: 1rem;
+  }
+}
+
+/* *******************************************************************
+TIPS AND TOOLS
+******************************************************************* */
+
+#tips-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  height: 100%;
+}
+
+#tips-links > div {
+  height: 45vw;
+  border: 1px solid #fff;
+}
+
+#tips-links p {
+  color: #fefefe;
+}
+
+#tips-links > div:first-of-type {
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/sherwin.jpg);
+  background-size: cover;
+}
+
+#tips-links > div:nth-of-type(2) {
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/dunn.gif);
+  background-size: cover;
+}
+
+
+
+
+/* *******************************************************************
+MESSAGE
+******************************************************************* */
+
+
+#message-text {
+  border: 1px solid #000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* *******************************************************************
+FOOTER
+******************************************************************* */
+
+
+
+
+.responsive-blog-footer {
+  background: #4a4a4a;
+  padding: 3rem 3rem;
+  color: white;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .responsive-blog-footer h4 {
+    font-size: 1.5rem;
+  }
+}
+
+.responsive-blog-footer p {
+  color: #8a8a8a;
+}
+
+.responsive-blog-footer .mailing-list {
+  margin-bottom: 1.5rem;
+}
+
+.responsive-blog-footer .mailing-container {
+  margin-bottom: 2rem;
+}
+
+.responsive-blog-footer .about-section, .responsive-blog-footer .tag-section {
+  margin-bottom: 2rem;
+}
+
+.responsive-blog-footer .about-section a, .responsive-blog-footer .tag-section a {
+  color: #1779ba;
+}
+
+.responsive-blog-footer .subscribe-button {
+  background-color: #1779ba;
+}
+
+.responsive-blog-footer .subscribe-button:hover {
+  background-color: #146aa3;
+  transition: color 0.3s ease-in;
+}
+
+.responsive-blog-footer .fa-chevron-circle-up {
+  font-size: 3rem;
+  color: #8a8a8a;
+}
+
+.responsive-blog-footer .fa-chevron-circle-up:hover {
+  color: #b0b0b0;
+  transition: color 0.3s ease-in;
 }

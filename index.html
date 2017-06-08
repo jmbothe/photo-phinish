@@ -6,17 +6,22 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Photo Phinish Painting</title>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/mq.css">
+  <link rel="stylesheet" type="text/css" href="images/icons/foundation-icons.css">
 </head>
 
 <body>
+
 
 <!-- ****************************************************
 OFF-CANVAS MENU
 **************************************************** -->
 
-<div class="off-canvas-wrapper">
+
+<div class="off-canvas-wrapper" id="ocw">
   <div class="off-canvas position-left" id="offCanvas" data-transition="overlap" data-off-canvas>
     <!-- Close button -->
     <button class="close-button" aria-label="Close menu" type="button" data-close>
@@ -37,87 +42,140 @@ OFF-CANVAS MENU
 
   </div>
 
+
 <!-- ****************************************************
 MAIN CONTENT
 **************************************************** -->
 
+
 <div class="off-canvas-content" data-off-canvas-content>
 
-<!-- ****************************************************
-TITLE
-**************************************************** -->
-<section id="title">
 
-  <div class="row">
-    <div class="column flex-container flex-dir-column align-middle">
-      <h1>Photo Phinish Painting</h1>
+  <!-- *****************************************************
+  MOBILE TOP BAR
+  ********************************************************* -->
 
+
+
+  <div class="top-bar-container" data-sticky-container id="mtb">
+    <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+      <div class="top-bar">
+        <div class="top-bar-title">
+          <button class="menu-icon dark" type="button" data-toggle="offCanvas"></button>
+          <strong> Site Title</strong>
+        </div>
+        <div class="top-bar-right">
+          <p>someting</p>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="row" id="menu-off">
-    <div class="column flex-container flex-dir-column align-middle">
-      <a data-toggle="offCanvas">Menu</a>
-    </div>
-  </div>
-
-  <div class="row" id="top-contact">
-    <div class="column">
-      <h3>Contact us for a <strong>free</strong> consultation and estimate:</h3>
-      <h4>(443)-286-6988</h4>
-      <h4>brett@photo-phinish.com</h4>
-    </div>
-  </div>
-
-</section><!-- end title -->
 
 <!-- ****************************************************
 HERO
-**************************************************** -->
+************************************************** -->
 
 <section id="hero">
 
   <div id="hero-text">
-    <h1>Photo Phinish Painting</h1>
-    <h2>Safe. Clean. Professional.</h2>
+    <h2>Photo Phinish Painting</h2>
+    <br>
+    <h3>Safe. Clean. Professional.</h3>
   </div>
 
 </section><!-- END HERO -->
 
 
+<!-- *****************************************************
+LARGE SCREEN TOP BAR
+********************************************************* -->
+
+
+<div id="top-bar-anchor" class="topbar-sticky-shrink-header"></div>
+
+<div data-sticky-container id="dsc">
+  <div data-sticky data-margin-top='0' data-top-anchor="top-bar-anchor:bottom" data-btm-anchor="ocw:bottom">
+    <div class="top-bar topbar-sticky-shrink">
+      <div class="top-bar-title">
+        <img src="http://placehold.it/150x38" alt="" />
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a href="#">Thing 1</a></li>
+          <li><a href="#">Thing 2</a></li>
+          <li><a data-toggle="offCanvas"><i class="fi-list"></i><span> Menu</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END TOP BAR -->
+
+
 <!-- ****************************************************
 ABOUT
 **************************************************** -->
+
+
 <section id="pitch">
 
-  <div class="row">
-    <div class="large-8 medium-8 small-12 column">
-      <p>Photo Phinish is a full-service interior and exterior painting company that has been family-owned and operated since 1999. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-
+  <div class="row" id="pitch-main">
     <div class="column">
-      <h5>Why choose Photo Phinish?</h5>
-      <ul class="no-bullet">
-        <li>Over fifteen years of dedicated service to our community.</li>
-        <li>Safe, clean and professional painters.</li>
-        <li>Simple, upfront pricing. No hidden costs.</li>
-        <li>Excellent communication. We are there for you when you need us.</li>
-        <li>Flexible scheduling. We work on your timeline.</li>
-        <li>Free consultation and estimate.</li>
-      </ul>
+      <p>Photo Phinish is a full-service interior and exterior painting company that has been family-owned and operated since 1999. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </div>
 
+  <div class="row" id="pitch-why">
+
+    <div class="column">
+      <h2>Why choose Photo Phinish?</h2>
+    </div>
+  </div>
+<br>
+    <div class="row" id="reasons">
+
+      <div class="large-4 medium-4 small-12 column">
+        <i class="fi-paint-bucket"></i><span> Over fifteen years of dedicated service to our community.</span>
+      </div>
+      <div class="large-4 medium-4 small-12 column">
+        <i class="fi-paint-bucket"></i><span> Safe, clean and professional painters.</span>
+      </div>
+      <div class="large-4 medium-4 small-12 column">
+        <i class="fi-paint-bucket"></i><span> Simple, upfront pricing. No hidden costs.</span>
+      </div>
+
+      <div class="large-4 medium-4 small-12 column">
+        <i class="fi-paint-bucket"></i><span> Excellent communication. We are there for you when you need us.</span>
+      </div>
+      <div class="large-4 medium-4 small-12 column">
+        <i class="fi-paint-bucket"></i><span> Flexible scheduling. We work on your timeline.</span>
+      </div>
+      <div class="large-4 medium-4 small-12 column">
+        <i class="fi-paint-bucket"></i><span> Free consultation and estimate.</span>
+      </div>
+
+    </div>
+
 </section><!-- END PITCH -->
+
 
   <!-- ****************************************************
   SERVICES
   **************************************************** -->
+
+
 <section id="services">
 
   <div class="row">
     <div class="column">
-      <h3>Our Services Include</h3>
+      <h2>Our Services Include</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
 
       <ul class="accordion" data-accordion data-allow-all-closed>
 
@@ -174,13 +232,140 @@ ABOUT
       </ul> <!-- END ACCORDIAN -->
 
     </div>
+
   </div>
 
 </section><!--END SERVICES -->
 
+<!--
+<section id="hero-two">
+</section>
+-->
+
+
+<!-- ****************************************************
+TESTIMONIALS
+**************************************************** -->
+
+
+<section id="testimonials">
+
+  <div class="row">
+    <div class="column">
+      <h2>Testimonials</h2>
+    </div>
+  </div>
+
+  <!-- slider code -->
+
+  <div class="orbit testimonial-slider-container" role="region" aria-label="testimonial-slider" data-orbit>
+    <ul class="orbit-container">
+      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+
+      <!-- content slide 1 -->
+
+      <li class="orbit-slide">
+        <div class="testimonial-slide row">
+          <div class="small-12 large-10 column">
+            <div class="row align-middle testimonial-slide-content">
+              <div class="small-12 medium-12 large-12 column testimonial-slide-text">
+                <p class="testimonial-slide-quotation">Brett painted our entire house when we moved in and has also done painting for our business in Catonsville. Beautifully done and also a great guy to work with!!</p>
+                <div class="testimonial-slide-author-container">
+                  <p class="testimonial-slide-author-info">Jamie R.<br><i>Catonsville, MD</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!--content slide 2 -->
+
+      <li class="orbit-slide">
+        <div class="testimonial-slide row">
+          <div class="small-12 large-10 column">
+            <div class="row align-middle testimonial-slide-content">
+              <div class="small-12 medium-12 large-12 column testimonial-slide-text">
+                <p class="testimonial-slide-quotation">Brett painted our entire house when we moved in and has also done painting for our business in Catonsville. Beautifully done and also a great guy to work with!!</p>
+                <div class="testimonial-slide-author-container">
+                  <p class="testimonial-slide-author-info">Jamie R.<br><i>Catonsville, MD</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- content slide 3 -->
+
+      <li class="orbit-slide">
+        <div class="testimonial-slide row">
+          <div class="small-12 large-10 column">
+            <div class="row align-middle testimonial-slide-content">
+              <div class="small-12 medium-12 large-12 column testimonial-slide-text">
+                <p class="testimonial-slide-quotation">Brett painted our entire house when we moved in and has also done painting for our business in Catonsville. Beautifully done and also a great guy to work with!!</p>
+                <div class="testimonial-slide-author-container">
+                  <p class="testimonial-slide-author-info">Jamie R.<br><i>Catonsville, MD</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- content slide 4 -->
+
+      <li class="orbit-slide">
+        <div class="testimonial-slide row">
+          <div class="small-12 large-10 column">
+            <div class="row align-middle testimonial-slide-content">
+              <div class="small-12 medium-12 large-12 column testimonial-slide-text">
+                <p class="testimonial-slide-quotation">Brett painted our entire house when we moved in and has also done painting for our business in Catonsville. Beautifully done and also a great guy to work with!!</p>
+                <div class="testimonial-slide-author-container">
+                  <p class="testimonial-slide-author-info">Jamie R.<br><i>Catonsville, MD</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+  <!-- slider close -->
+
+</section>
+
+
+<!-- ****************************************************
+MESSAGE
+**************************************************** -->
+
+
+<section id="message">
+
+  <div class="row">
+    <div class="large-6 medium-6 small-12 column" id="message-img">
+      <img src="images/brett-and-chris02.jpg">
+    </div>
+
+    <div class="large-6 medium-6 small-12 column" id="message-text">
+      <p>A message from Photo Phinish founder Brett Bothe:</p>
+      <p>I am deeply grateful to have served out community for so many years. orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+
+</section>
+
+
+
 <!-- ****************************************************
 TIPS AND TOOLS
 **************************************************** -->
+
+
+<section id="tips">
 
   <div class="row">
     <div class="column">
@@ -190,42 +375,35 @@ TIPS AND TOOLS
 
   <div class="row">
     <div class="column">
+      <p>We know how important the appearance of your home can be. We don't take a fresh paint job lightly, and nieth should you. Here are some great resources to help you make an informed decision about the future of your home.
     </div>
   </div>
 
-<!-- ****************************************************
-TESTIMONIALS
-**************************************************** -->
-
-  <div class="row">
+  <div class="row medium-unstack" id="tips-links">
     <div class="column">
-      <h2>Testimonials</h2>
+      <a href="https://www.sherwin-williams.com/visualizer/" target="_blank">
+        <p>Sherwin Williams Color Visualizer</p>
+      </a>
     </div>
-  </div>
 
-  <div class="row">
     <div class="column">
+      <a href="http://www.dunnedwards.com/Homeowners/ExploreColor/ExploreThePerfectPalette/ExploreThePerfectPalette.aspx" target="_blank">
+      <p>Dunn Edwards Perfect Pallette</p></a>
     </div>
   </div>
 
-<!-- ****************************************************
-AWARDS
-**************************************************** -->
+</section>
 
-  <div class="row">
-    <div class="column">
-      <h2>Awards</h2>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="column">
-    </div>
-  </div>
+
+
 
 <!-- ****************************************************
 PREFERRED VENDORS
 **************************************************** -->
+
+
+<section id="vendors">
 
   <div class="row">
     <div class="column">
@@ -235,22 +413,74 @@ PREFERRED VENDORS
 
   <div class="row">
     <div class="column">
+      <p>Here is short list of home-improvement vendors that we have worked with and trust.</p>
     </div>
   </div>
+
+  <div class="row medium-unstack">
+    <div class="column">
+      <p><a href="http://www.shoresideflooring.com/">Shoreside Carpet and Flooring</a></p>
+    </div>
+    <div class="column">
+      <p><a href="http://www.baltimorecontractors.com/index.php/contact-us">Baltimore Contractors</a></p>
+    </div>
+    <div class="column">
+      <p><a href="http://dawn.decoratingden.com/aboutme.html">Dawn Blount-Walker Design</a></p>
+    </div>
+  </div>
+
+</section>
+
+
 
 <!-- ****************************************************
 FOOTER
 **************************************************** -->
 
-  <div class="row">
-    <div class="column">
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="column">
+<footer class="responsive-blog-footer" id="footer">
+<div class="row">
+  <div class="medium-8 columns small-order-2 medium-order-1 about-container">
+    <div class="row">
+      <div class="hide-for-small-only medium-4 columns about-section">
+        <img src="http://placehold.it/250x250">
+      </div>
+      <div class="medium-8 columns about-section">
+        <h4> About Me</h4>
+        <p>paragraph about how amazing and awesome i am paragraph about how amazing and awesome i am paragraph about how amazing and awesome i am</p>
+        <a href="">Read More</a>
+      </div>
     </div>
   </div>
+  <div class="small-12 medium-4 columns small-order-1 medium-order-2 mailing-container">
+    <h4 class="mailing-list">Join my mailing list</h4>
+    <input type="text" placeholder="Email Address">
+    <a class="button expanded subscribe-button" href="#">Subscribe Now</a>
+  </div>
+</div>
+<div class="row tag-search">
+  <div class="columns">
+    <h4>Search by Tag</h4>
+    <ul class="menu simple tag-section">
+      <li><a href="">word</a></li>
+      <li><a href="">word</a></li>
+      <li><a href="">word</a></li>
+      <li><a href="">word</a></li>
+      <li><a href="">word</a></li>
+      <li><a href="">word</a></li>
+      <li><a href="">word</a></li>
+    </ul>
+  </div>
+</div>
+<div class="row columns flex-container align-justify">
+   <p> all rights reserved</p>
+  <div class="up-arrow">
+    <a href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+  </div>
+</div>
+</footer>
+
+
 
 
 

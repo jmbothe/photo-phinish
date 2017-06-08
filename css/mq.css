@@ -1,0 +1,46 @@
+@media screen and (max-width: 639px) {
+  #message {
+    padding-top: 0;
+  }
+
+  #message .column:first-of-type {
+    padding: 0;
+  }
+
+#dsc {
+  display: none;
+}
+
+.top-bar .top-bar-right {
+  flex: 0 1 auto;
+}
+
+}
+
+
+@media screen and (min-width: 640px) {
+
+#mtb {
+  display: none;
+}
+}
+
+@media screen and (min-width: 964px) {
+
+  #message > .row {
+    position: relative;
+    align-items: center;
+  }
+
+  #message-text {
+    background-color: #fff;
+    position: absolute;
+    left: 26rem;
+    font-size: 1.3rem;
+  }
+
+  #tips-links > div {
+    height: 22vw;
+  }
+
+}
