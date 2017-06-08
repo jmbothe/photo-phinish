@@ -1,4 +1,4 @@
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 39.999rem) {
   #message {
     padding-top: 0;
   }
@@ -9,6 +9,13 @@
 
 .top-bar .top-bar-right {
   flex: 0 1 auto;
+}
+
+#testimonials {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/brett-and-chris.jpg");
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, top;
 }
 
 }

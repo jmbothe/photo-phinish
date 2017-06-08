@@ -111,7 +111,7 @@ TESTIMONIALS
 
 #testimonials {
   padding: 8vw 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("../images/brett-and-chris.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/brett-and-chris.jpg");
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: center, top;
@@ -139,6 +139,7 @@ TESTIMONIALS
 .testimonial-slider-container .orbit-previous,
 .testimonial-slider-container .orbit-next {
   color: #fefefe;
+  z-index: 0;
 }
 
 .testimonial-slider-container .orbit-previous:hover, .testimonial-slider-container .orbit-previous:active, .testimonial-slider-container .orbit-previous:focus,
