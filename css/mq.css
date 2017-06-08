@@ -7,23 +7,12 @@
     padding: 0;
   }
 
-#dsc {
-  display: none;
-}
-
 .top-bar .top-bar-right {
   flex: 0 1 auto;
 }
 
 }
 
-
-@media screen and (min-width: 640px) {
-
-#mtb {
-  display: none;
-}
-}
 
 @media screen and (min-width: 964px) {
 

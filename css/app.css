@@ -110,34 +110,35 @@ TESTIMONIALS
 
 
 #testimonials {
-  padding-top: 0;
+  padding: 8vw 0;
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("../images/brett-and-chris.jpg");
-  background-position: center top;
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, top;
   background-attachment: fixed;
+  color: #fefefe;
 }
 
 #testimonials > div:first-of-type {
   color: #fefefe;
-  padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 
 #testimonials h2 {
   text-align: center;
 }
 
+
+@charset "UTF-8";
+
 .testimonial-slider-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("../images/brett-and-chris.jpg");
-  background-position: center top;
-  background-attachment: fixed;
-  padding: 4rem 1rem;
-  color: #fefefe;
-  height: 65vh;
+  background: transparent;
+  padding: 1rem 1rem;
 }
 
 .testimonial-slider-container .orbit-previous,
 .testimonial-slider-container .orbit-next {
   color: #fefefe;
-  z-index: 0;
 }
 
 .testimonial-slider-container .orbit-previous:hover, .testimonial-slider-container .orbit-previous:active, .testimonial-slider-container .orbit-previous:focus,
@@ -190,7 +191,7 @@ TESTIMONIALS
 .testimonial-slider-container .testimonial-slide-quotation::before {
   content: "“";
   font-size: 6rem;
-  color: #fefefe;
+  color: #d6d6d6;
   position: absolute;
   top: -3rem;
   left: -3rem;
@@ -207,6 +208,12 @@ TESTIMONIALS
     margin-left: 1rem;
   }
 }
+
+
+
+
+
+
 
 /* *******************************************************************
 TIPS AND TOOLS
