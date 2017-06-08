@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/mq.css">
   <link rel="stylesheet" type="text/css" href="images/icons/foundation-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Poppins:300,400,500,600,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 </head>
 
 <body>
@@ -51,21 +52,24 @@ MAIN CONTENT
 <div class="off-canvas-content" data-off-canvas-content>
 
 
-  <!-- *****************************************************
-  MOBILE TOP BAR
-  ********************************************************* -->
-
+<!-- *****************************************************
+MOBILE TOP BAR
+********************************************************* -->
 
 
   <div class="top-bar-container hide-for-medium" data-sticky-container>
     <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
-      <div class="top-bar">
+      <div class="top-bar" id="mobile-bar">
         <div class="top-bar-title">
-          <button class="menu-icon dark" type="button" data-toggle="offCanvas"></button>
-          <strong> Site Title</strong>
+          <strong>Photo Phinish</strong>
         </div>
         <div class="top-bar-right">
-          <p>someting</p>
+          <ul class="menu">
+            <li><a href="#"><i class="fi-telephone"></i></a></li>
+            <li><a href="#"><i class="fi-mail"></i></a></li>
+            <li><a href="#"><i class="fi-social-facebook"></i></a></li>
+            <li><a  data-toggle="offCanvas"><i class="fi-list"></i></a></li>
+
         </div>
       </div>
     </div>
@@ -79,7 +83,7 @@ HERO
 <section id="hero">
 
   <div id="hero-text">
-    <h2>Photo Phinish Painting</h2>
+    <h1>Photo Phinish Painting</h1>
     <br>
     <h3>Safe. Clean. Professional.</h3>
   </div>
@@ -98,14 +102,18 @@ LARGE SCREEN TOP BAR
   <div data-sticky data-margin-top='0' data-top-anchor="top-bar-anchor:bottom" data-btm-anchor="ocw:bottom">
     <div class="top-bar topbar-sticky-shrink">
       <div class="top-bar-title">
-        <img src="http://placehold.it/150x38" alt="" />
+        <h2>Photo Phinish</h2>
       </div>
       <div class="top-bar-right">
-        <ul class="menu">
-          <li><a href="#">Thing 1</a></li>
-          <li><a href="#">Thing 2</a></li>
-          <li><a data-toggle="offCanvas"><i class="fi-list"></i><span> Menu</span></a></li>
+        <ul class="menu menu-hover-lines align-center">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Tips &#38; Tools</a></li>
+          <li><a href="#">Vendors</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
+
       </div>
     </div>
   </div>
@@ -127,50 +135,22 @@ ABOUT
     </div>
   </div>
 
-  <div class="row" id="pitch-why">
-
-    <div class="column">
-      <h2>Why choose Photo Phinish?</h2>
-    </div>
-  </div>
-<br>
-    <div class="row" id="reasons">
-
-      <div class="large-4 medium-4 small-12 column">
-        <i class="fi-paint-bucket"></i><span> Over fifteen years of dedicated service to our community.</span>
-      </div>
-      <div class="large-4 medium-4 small-12 column">
-        <i class="fi-paint-bucket"></i><span> Safe, clean and professional painters.</span>
-      </div>
-      <div class="large-4 medium-4 small-12 column">
-        <i class="fi-paint-bucket"></i><span> Simple, upfront pricing. No hidden costs.</span>
-      </div>
-
-      <div class="large-4 medium-4 small-12 column">
-        <i class="fi-paint-bucket"></i><span> Excellent communication. We are there for you when you need us.</span>
-      </div>
-      <div class="large-4 medium-4 small-12 column">
-        <i class="fi-paint-bucket"></i><span> Flexible scheduling. We work on your timeline.</span>
-      </div>
-      <div class="large-4 medium-4 small-12 column">
-        <i class="fi-paint-bucket"></i><span> Free consultation and estimate.</span>
-      </div>
-
-    </div>
-
 </section><!-- END PITCH -->
 
 
-  <!-- ****************************************************
-  SERVICES
-  **************************************************** -->
+
+<!-- ****************************************************
+SERVICES
+**************************************************** -->
 
 
 <section id="services">
 
-  <div class="row">
-    <div class="column">
-      <h2>Our Services Include</h2>
+  <div>
+    <div class="row">
+      <div class="column">
+        <h2>Our Services</h2>
+      </div>
     </div>
   </div>
 
@@ -244,17 +224,61 @@ ABOUT
 
 
 <!-- ****************************************************
+WHY CHOOSE
+**************************************************** -->
+
+<section>
+
+<div id="why">
+  <div class="row">
+    <div class="column">
+      <h2>Why choose Photo Phinish?</h2>
+    </div>
+  </div>
+</div>
+
+<br>
+  <div class="row" id="reasons">
+
+    <div class="large-4 medium-4 small-12 column">
+      <i class="fi-paint-bucket"></i><span> Over fifteen years of dedicated service to our community.</span>
+    </div>
+    <div class="large-4 medium-4 small-12 column">
+      <i class="fi-paint-bucket"></i><span> Safe, clean and professional painters.</span>
+    </div>
+    <div class="large-4 medium-4 small-12 column">
+      <i class="fi-paint-bucket"></i><span> Simple, upfront pricing. No hidden costs.</span>
+    </div>
+
+    <div class="large-4 medium-4 small-12 column">
+      <i class="fi-paint-bucket"></i><span> Excellent communication. We are there for you when you need us.</span>
+    </div>
+    <div class="large-4 medium-4 small-12 column">
+      <i class="fi-paint-bucket"></i><span> Flexible scheduling. We work on your timeline.</span>
+    </div>
+    <div class="large-4 medium-4 small-12 column">
+      <i class="fi-paint-bucket"></i><span> Free consultation and estimate.</span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ****************************************************
 TESTIMONIALS
 **************************************************** -->
 
 
 <section id="testimonials">
 
-  <div class="row">
-    <div class="column">
-      <h2>Testimonials</h2>
+  <div>
+    <div class="row">
+      <div class="column">
+        <h2>Testimonials</h2>
+      </div>
     </div>
   </div>
+
 
   <!-- slider code -->
 
@@ -351,8 +375,44 @@ MESSAGE
     </div>
 
     <div class="large-6 medium-6 small-12 column" id="message-text">
-      <p>A message from Photo Phinish founder Brett Bothe:</p>
+      <h4>A message from Photo Phinish founder Brett Bothe:</h4>
       <p>I am deeply grateful to have served out community for so many years. orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ****************************************************
+PREFERED VENDORS
+**************************************************** -->
+
+
+<section id="vendors">
+
+  <div>
+    <div class="row">
+      <div class="column">
+        <h2>Prefered Vendors</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <p>Here is short list of home-improvement vendors that we have worked with and trust.</p>
+    </div>
+  </div>
+
+  <div class="row medium-unstack">
+    <div class="column">
+      <p><a href="http://www.shoresideflooring.com/" target="_blank">Shoreside Carpet and Flooring</a></p>
+    </div>
+    <div class="column">
+      <p><a href="http://www.baltimorecontractors.com/index.php/contact-us" target="_blank">Baltimore Contractors</a></p>
+    </div>
+    <div class="column">
+      <p><a href="http://dawn.decoratingden.com/aboutme.html" target="_blank">Dawn Blount-Walker Design</a></p>
     </div>
   </div>
 
@@ -396,43 +456,6 @@ TIPS AND TOOLS
 
 
 
-
-
-<!-- ****************************************************
-PREFERRED VENDORS
-**************************************************** -->
-
-
-<section id="vendors">
-
-  <div class="row">
-    <div class="column">
-      <h2>Preffered Vendors</h2>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <p>Here is short list of home-improvement vendors that we have worked with and trust.</p>
-    </div>
-  </div>
-
-  <div class="row medium-unstack">
-    <div class="column">
-      <p><a href="http://www.shoresideflooring.com/" target="_blank">Shoreside Carpet and Flooring</a></p>
-    </div>
-    <div class="column">
-      <p><a href="http://www.baltimorecontractors.com/index.php/contact-us" target="_blank">Baltimore Contractors</a></p>
-    </div>
-    <div class="column">
-      <p><a href="http://dawn.decoratingden.com/aboutme.html" target="_blank">Dawn Blount-Walker Design</a></p>
-    </div>
-  </div>
-
-</section>
-
-
-
 <!-- ****************************************************
 FOOTER
 **************************************************** -->
@@ -442,22 +465,9 @@ FOOTER
 
   <section class="contact-us-section">
     <div class="row medium-unstack">
-      <div class="columns contact-us-section-left">
-        <h1 class="contact-us-header">Get In Touch</h1>
-        <div class="responsive-embed">
-          <img src="http://maps.googleapis.com/maps/api/staticmap?center=campbell&zoom=13&scale=false&size=600x300&maptype=roadmap&sensor=false&format=png&visual_refresh=true" alt="Google Map of campbell" alt="" />
-        </div>
 
-        <ul class="contact-us-list">
-          <li class="address">100 W Rincon Ave, Campbell CA 95008</li>
-          <li class="email"><a href="mailto:">hello@yeticave.com</a></li>
-          <li class="phone">
-            1 (408) 445 9978
-          </li>
-        </ul>
-      </div>
-      <div class="columns contact-us-section-right">
-        <h1 class="contact-us-header">Email Us for a Free Consultation</h1>
+      <div class="columns contact-us-section-left">
+        <h2 class="contact-us-header">Email us for a free consultation</h2>
         <form class="contact-us-form" action="https://formspree.io/jeffrymbothe@gmail.com"
       method="POST">
           <input type="text" name="name" placeholder="Full name">
@@ -469,6 +479,21 @@ FOOTER
           </div>
         </form>
       </div>
+
+
+
+
+      <div class="columns contact-us-section-right">
+        <h2 class="contact-us-header">Other ways to get in touch</h2>
+
+
+        <ul class="contact-us-list">
+          <li><a href="#"><i class="fi-telephone">&nbsp;</i></a>&nbsp;(555) 555-5555</li>
+          <li><a href="#"><i class="fi-mail">&nbsp;</i></a>&nbsp;brett@photo-phinish.com</li>
+          <li><a href="#"><i class="fi-social-facebook">&nbsp;</i></a>&nbsp;Photo Phinish Painting</li>
+        </ul>
+      </div>
+
     </div>
   </section>
 

@@ -1,6 +1,6 @@
 @media screen and (max-width: 39.999rem) {
   #message {
-    padding-top: 0;
+    margin-top: 0!important;
   }
 
   #message .column:first-of-type {
@@ -11,17 +11,63 @@
   flex: 0 1 auto;
 }
 
-#testimonials {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/brett-and-chris.jpg");
-  background-size: cover, cover;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, top;
 }
 
+
+
+@media screen and (max-width: 963px) {
+
+  #large-topbar li {
+    font-size: .75rem;
+  }
+
+  #large-topbar .top-bar-title h2 {
+    font-size: 1.5rem;
+  }
+
+  #large-topbar .top-bar-title {
+    width: 3rem;
+  }
+
 }
+
+
+@media screen and (min-width: 40rem) {
+
+p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.accordion-title {
+  font-size: 1.7rem;
+}
+
+.accordion p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+  section:not(#hero) {
+  margin-top: 6rem;
+  }
+}
+
 
 
 @media screen and (min-width: 964px) {
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  #large-topbar li {
+    font-size: 1.1rem;
+  }
+
+  #large-topbar .top-bar-title h2 {
+    font-size: 2.1rem;
+  }
 
   #message > .row {
     position: relative;
@@ -37,6 +83,20 @@
 
   #tips-links > div {
     height: 17rem;
+  }
+
+}
+
+
+
+@media screen and (min-width: 1190px) {
+
+  #large-topbar li {
+    font-size: 1.5rem;
+  }
+
+  #large-topbar .top-bar-title h2 {
+    font-size: 2.5rem;
   }
 
 }
