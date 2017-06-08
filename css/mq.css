@@ -34,13 +34,25 @@
 
 @media screen and (min-width: 40rem) {
 
+#reasons > div:not(:last-of-type) {
+  padding-bottom: 0;
+}
+
+#reasons > div:first-of-type, #reasons > div:nth-of-type(2), #reasons > div:nth-of-type(3) {
+padding-bottom: 4rem;
+  }
+
 p {
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
 
+h2 {
+  font-size: 2.75rem;
+}
+
 .accordion-title {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .accordion p {
@@ -51,6 +63,15 @@ p {
   section:not(#hero) {
   margin-top: 6rem;
   }
+
+
+ #hero, #services, #testimonials, #vendors {
+   background-attachment: fixed;
+ }
+
+
+
+
 }
 
 

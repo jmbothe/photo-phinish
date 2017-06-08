@@ -1,3 +1,6 @@
+@charset "UTF-8";
+
+
 /* *******************************************************************
 MULTI
 ******************************************************************* */
@@ -21,39 +24,32 @@ p, a, span, li {
   color: hsl(290, 6%, 18%);
 }
 
+h2 {
+  font-size: 1.75rem;
+}
+
 
 /* *******************************************************************
-HERO
+OFF CANVAS BAR
 ******************************************************************* */
 
-#hero {
-  background-image: linear-gradient(hsla(28, 53%, 69%,.3), hsla(28, 53%, 69%,.3)), url(../images/brush02.jpg);
-  background-position: center, center;
-  background-size: cover, cover;
-  height: 33rem;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+
+#offCanvas {
+  background-color: hsl(290, 6%, 18%);
 }
 
-#hero-text h1, #hero-text h3 {
-  font-family: orbitron;
-  text-transform: uppercase;
+#offCanvas a {
   color: #fefefe;
-  text-shadow: 1px 1px 3px #0a0a0a;
 }
 
-h1 {
-  font-size: 3rem;
+#offCanvas a:hover, #offCanvas a:active {
+  background-color: hsl(290, 6%, 25%);
+  border-style: none;
 }
 
+#offCanvas a:focus {
+  outline: none;
+}
 
 /* *******************************************************************
 MOBILE TOP BAR
@@ -62,6 +58,7 @@ MOBILE TOP BAR
 #mobile-bar .top-bar-title {
     font-family: orbitron;
     text-transform: uppercase;
+    margin-right: 0;
 }
 
 #mobile-bar .top-bar-right {
@@ -71,7 +68,7 @@ MOBILE TOP BAR
 }
 
 #mobile-bar {
-  background: hsl(290, 6%, 18%);
+  background-color: hsl(290, 6%, 18%);
   color: #fefefe;
 }
 
@@ -80,8 +77,8 @@ MOBILE TOP BAR
 }
 
 #mobile-bar ul li {
-  margin-right: 1rem;
-  font-size: 1.65rem;
+  margin-right: .9rem;
+  font-size: 1.45rem;
 }
 
 #mobile-bar ul li:last-of-type {
@@ -142,8 +139,6 @@ LARGE TOP BAR
 /* *******************************************************************
 LARGE TOP BAR UNDERLINING CSS
 ******************************************************************* */
-
-
 
 
 .menu-hover-lines {
@@ -210,9 +205,42 @@ LARGE TOP BAR UNDERLINING CSS
 
 
 /* *******************************************************************
-WHY CHOOSE
+HERO
 ******************************************************************* */
 
+
+#hero {
+  background-image: linear-gradient(hsla(28, 53%, 69%,.3), hsla(28, 53%, 69%,.3)), url(../images/brush02.jpg);
+  background-position: center, bottom;
+  background-size: cover, cover;
+  height: 33rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-text h1, #hero-text h3 {
+  font-family: orbitron;
+  text-transform: uppercase;
+  color: #fefefe;
+  text-shadow: 1px 1px 3px #0a0a0a;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+
+/* *******************************************************************
+PITCH
+******************************************************************* */
+
+
+
+/* *******************************************************************
+WHY CHOOSE
+******************************************************************* */
 
 
 #why {
@@ -222,6 +250,10 @@ WHY CHOOSE
 #reasons > div {
   display: flex;
   justify-content: space-around;
+}
+
+#reasons > div:not(:last-of-type) {
+  padding-bottom: 2rem;
 }
 
 #reasons i {
@@ -237,7 +269,6 @@ WHY CHOOSE
 }
 
 
-
 /* *******************************************************************
 SERVICES
 ******************************************************************* */
@@ -248,7 +279,6 @@ SERVICES
   background-image: linear-gradient(hsla(28, 53%, 69%,.3), hsla(28, 53%, 69%,.3)), url(../images/buckets960.jpeg);
   background-position: center, center;
   background-size: cover, cover;
-  background-attachment: fixed;
 }
 
 #services > div:first-of-type {
@@ -266,7 +296,7 @@ SERVICES
 }
 
 .accordion p {
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 .accordion-title:hover, .accordion-title:focus {
@@ -274,8 +304,6 @@ SERVICES
     color: hsl(290, 6%, 18%);
     border-left: 12px solid hsl(200, 94%, 79%);
   }
-
-
 
 
 /* *******************************************************************
@@ -289,7 +317,6 @@ TESTIMONIALS
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: center, top;
-  background-attachment: fixed;
   color: #fefefe;
 }
 
@@ -305,8 +332,6 @@ TESTIMONIALS
 #testimonials p {
   color: #fefefe;
 }
-
-@charset "UTF-8";
 
 .testimonial-slider-container {
   background: transparent;
@@ -435,11 +460,10 @@ TIPS AND TOOLS
 }
 
 
-
-
 /* *******************************************************************
 VENDORS
 ******************************************************************* */
+
 
 #vendors {
   padding: 3rem 0;
@@ -447,7 +471,6 @@ VENDORS
     background-size: cover, cover;
     background-repeat: no-repeat, no-repeat;
     background-position: center, top;
-    background-attachment: fixed;
     color: #fefefe;
 }
 
@@ -477,6 +500,11 @@ FOOTER
 
 #footer i {
   font-size: 1.5rem;
+  color: #98dafc;
+}
+
+#footer .contact-us-section .contact-us-section-left {
+  border-color: #98dafc;
 }
 
 #footer li {
