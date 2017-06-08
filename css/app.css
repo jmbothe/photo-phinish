@@ -12,11 +12,11 @@ section, #pitch-why {
 HERO
 ******************************************************************* */
 
-#hero, #hero-two {
+#hero {
   background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url(../images/brush02.jpg);
   background-position: center, center;
   background-size: cover, cover;
-  height: 70vh;
+  height: 30rem;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -28,14 +28,6 @@ HERO
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-#hero-two {
-  background-image: url(../images/brett-and-chris.jpg);
-  background-position: top;
-  background-attachment: fixed;
-  height: 100vh;
-}
-
 
 #hero-text h2, #hero-text h3, .top-bar h2 {
   font-family: orbitron;
@@ -50,6 +42,9 @@ TOP BAR
 ******************************************************************* */
 
 
+#large-topbar {
+  z-index: 30;
+}
 
 .topbar-sticky-shrink {
   padding: 2rem;
@@ -110,7 +105,7 @@ TESTIMONIALS
 
 
 #testimonials {
-  padding: 8vw 0;
+  padding: 3rem 0;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/brett-and-chris.jpg");
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
@@ -139,7 +134,9 @@ TESTIMONIALS
 .testimonial-slider-container .orbit-previous,
 .testimonial-slider-container .orbit-next {
   color: #fefefe;
-  z-index: 0;
+}
+
+.orbit-next, .orbit-previous {
 }
 
 .testimonial-slider-container .orbit-previous:hover, .testimonial-slider-container .orbit-previous:active, .testimonial-slider-container .orbit-previous:focus,
@@ -228,7 +225,7 @@ TIPS AND TOOLS
 }
 
 #tips-links > div {
-  height: 45vw;
+  height: 14rem;
   border: 1px solid #fff;
 }
 
