@@ -265,6 +265,7 @@ WHY CHOOSE
 }
 
 #reasons span {
+  width: 100%;
   padding: 2rem 1rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
@@ -291,9 +292,19 @@ REASONS ANIMATION
   content: " ";
   width: 5.4375rem;
   height: 100%;
-
   transition: .5s 180s;
+}
 
+#reasons span::after {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: " ";
+  width: .9375rem;
+  height: 100%;
+  transition: .5s 180s;
+  background-color: transparent;
 }
 
 /****** B1 ********/
@@ -305,6 +316,11 @@ REASONS ANIMATION
 }
 
 #b1:hover + span::before  {
+background-color: #98dafc;
+transition: .5s;
+}
+
+#b1:hover + span::after  {
 background-color: #98dafc;
 transition: .5s;
 }
@@ -327,6 +343,11 @@ background-color: #8bfced;
 transition: .5s;
 }
 
+#b2:hover + span::after  {
+background-color: #8bfced;
+transition: .5s;
+}
+
 #b2:hover ~ span {
 background-color: #8bfced;
 transition: .5s;
@@ -341,6 +362,11 @@ transition: .5s;
 }
 
 #b3:hover + span::before  {
+background-color: #7ffcb0;
+transition: .5s;
+}
+
+#b3:hover + span::after  {
 background-color: #7ffcb0;
 transition: .5s;
 }
@@ -363,6 +389,11 @@ background-color: #7cfc72;
 transition: .5s;
 }
 
+#b4:hover + span::after  {
+background-color: #7cfc72;
+transition: .5s;
+}
+
 #b4:hover ~ span {
 background-color: #7cfc72;
 transition: .5s;
@@ -381,6 +412,11 @@ background-color: #b8fd65;
 transition: .5s;
 }
 
+#b5:hover + span::after  {
+background-color: #b8fd65;
+transition: .5s;
+}
+
 #b5:hover ~ span {
 background-color: #b8fd65;
 transition: .5s;
@@ -395,6 +431,11 @@ transition: .5s;
 }
 
 #b6:hover + span::before  {
+background-color: #fdfa59;
+transition: .5s;
+}
+
+#b6:hover + span::after  {
 background-color: #fdfa59;
 transition: .5s;
 }
