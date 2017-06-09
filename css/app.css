@@ -44,8 +44,9 @@ OFF CANVAS BAR
 }
 
 #offCanvas li {
-  position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
@@ -53,20 +54,7 @@ OFF CANVAS BAR
 #offCanvas a {
   font-size: 1.4rem;
   font-weight: bold;
-  text-align: center;
-  line-height: 16vh;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   color: #fefefe;
-  padding-left: 0!important;
-}
-
-#offCanvas a:hover, #offCanvas a:active {
-  background-color: hsla(1, 1%, 1%, .25);
-  border-style: none;
 }
 
 #offCanvas a:focus {
