@@ -237,9 +237,10 @@ HERO
   justify-content: center;
   height: 30rem;
   text-align: center;
-  background-image: linear-gradient(hsla(28, 53%, 69%,.3), hsla(28, 53%, 69%,.3)), url(../images/brush02.jpg);
-  background-position: center, bottom;
-  background-size: cover, cover;
+  background-position: center;
+  background-size: cover;
+  background-color: hsla(290, 6%, 18%, .2);
+  background-blend-mode: multiply;
 }
 
 #hero-text h1, #hero-text h3 {
@@ -265,9 +266,11 @@ SERVICES
 
 #services {
   padding: 3rem 0;
-  background-image: linear-gradient(hsla(28, 53%, 69%,.3), hsla(28, 53%, 69%,.3)), url(../images/buckets960.jpeg);
-  background-position: center, center;
-  background-size: cover, cover;
+  background-position: center;
+  background-size: cover;
+  background-color: hsla(290, 6%, 18%, .4);
+  background-blend-mode: multiply;
+
 }
 
 #services > div:first-of-type {
@@ -446,10 +449,11 @@ TESTIMONIALS
 
 #testimonials {
   padding: 3rem 0;
-  background: linear-gradient(hsla(28, 53%, 30%,.4), hsla(28, 53%, 30%,.4)), url("../images/brett-and-chris.jpg");
-  background-size: cover, cover;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: hsla(20, 100%, 50%, .3);
+  background-blend-mode: multiply;
   color: #fefefe;
 }
 
@@ -574,10 +578,11 @@ VENDORS
 
 #vendors {
   padding: 3rem 0;
-  background: linear-gradient(hsla(28, 53%, 30%,.3), hsla(28, 53%, 69%,.3)), url("../images/brushes960.jpeg");
-  background-size: cover, cover;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: hsla(290, 6%, 20%, .5);
+  background-blend-mode: multiply;
   color: #fefefe;
 }
 
@@ -821,6 +826,17 @@ MEDIA QUERIES
     line-height: 2rem;
   }
 
+/* MESSAGE */
+
+  #message-text h4 {
+    font-size: 1.2rem;
+  }
+
+  #message-text p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+
 /* TIPS AND TOOLS */
 
   #tips-links a:hover {
@@ -865,8 +881,17 @@ MEDIA QUERIES
     background-color: #fff;
     position: absolute;
     left: 26rem;
-    font-size: 1.3rem;
   }
+
+  #message-text h4 {
+    font-size: 1.5rem;
+  }
+
+  #message-text p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
 
 /* TIPS AND TOOLS */
 
