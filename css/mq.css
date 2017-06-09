@@ -1,6 +1,7 @@
 @media screen and (max-width: 39.999rem) {
+
   #message {
-    margin-top: 0!important;
+    margin-top: 6rem!important;
   }
 
   #message .column:first-of-type {

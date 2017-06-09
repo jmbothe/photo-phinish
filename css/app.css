@@ -55,6 +55,10 @@ OFF CANVAS BAR
 MOBILE TOP BAR
 ******************************************************************* */
 
+#mobile-bar {
+  padding: 0 0 0 .5rem;
+}
+
 #mobile-bar .top-bar-title {
     font-family: orbitron;
     text-transform: uppercase;
@@ -77,18 +81,14 @@ MOBILE TOP BAR
 }
 
 #mobile-bar ul li {
-  margin-right: .9rem;
   font-size: 1.45rem;
 }
 
-#mobile-bar ul li:last-of-type {
-  margin-right: 0;
-}
-
 #mobile-bar ul li a {
-  padding: 0;
+    padding: 1rem .5rem;
   color: #fefefe;
 }
+
 
 /* *******************************************************************
 LARGE TOP BAR
@@ -213,7 +213,7 @@ HERO
   background-image: linear-gradient(hsla(28, 53%, 69%,.3), hsla(28, 53%, 69%,.3)), url(../images/brush02.jpg);
   background-position: center, bottom;
   background-size: cover, cover;
-  height: 33rem;
+  height: 30rem;
   text-align: center;
   display: flex;
   align-items: center;
@@ -501,6 +501,10 @@ FOOTER
 #footer i {
   font-size: 1.5rem;
   color: #98dafc;
+}
+
+#footer a {
+  padding: .1rem .5rem;
 }
 
 #footer .contact-us-section .contact-us-section-left {
