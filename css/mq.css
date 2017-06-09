@@ -1,5 +1,13 @@
 @media screen and (max-width: 39.999rem) {
 
+/* MOBILE TOP BAR */
+
+  .top-bar .top-bar-right {
+    flex: 0 1 auto;
+  }
+
+/* MESSAGE */
+
   #message {
     margin-top: 6rem!important;
   }
@@ -8,15 +16,16 @@
     padding: 0;
   }
 
-.top-bar .top-bar-right {
-  flex: 0 1 auto;
 }
-
-}
-
 
 
 @media screen and (max-width: 963px) {
+
+/* LARGE TOP BAR */
+
+  #large-topbar .top-bar-title {
+    width: 3rem;
+  }
 
   #large-topbar li {
     font-size: .75rem;
@@ -26,54 +35,65 @@
     font-size: 1.5rem;
   }
 
-  #large-topbar .top-bar-title {
-    width: 3rem;
-  }
-
 }
 
 
 @media screen and (min-width: 40rem) {
 
-p {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-}
-
-h2 {
-  font-size: 2.75rem;
-}
-
-.accordion-title {
-  font-size: 1.5rem;
-}
-
-.accordion p {
-  font-size: 1.2rem;
-  line-height: 2rem;
-}
+/* GLOBAL-ISH */
 
   section:not(#hero) {
-  margin-top: 6rem;
+    margin-top: 6rem;
   }
 
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.75rem;
+  }
 
  #hero, #services, #testimonials, #vendors {
    background-attachment: fixed;
- }
+  }
 
+/* SERVICES ACCORDION MENU */
 
+  .accordion-title {
+    font-size: 1.5rem;
+  }
 
+  .accordion p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+/* TIPS AND TOOLS */
+
+  #tips-links a:hover {
+   background-position: bottom;
+   transition: .5s;
+  }
+
+  #tips-links a:hover p {
+   font-size: 1.6rem;
+   transition: .1s;
+  }
 
 }
-
 
 
 @media screen and (min-width: 964px) {
 
+/* GLOBAL-ISH */
+
   h1 {
     font-size: 4rem;
   }
+
+/* LARGE TOP BAR */
 
   #large-topbar li {
     font-size: 1.1rem;
@@ -82,6 +102,8 @@ h2 {
   #large-topbar .top-bar-title h2 {
     font-size: 2.1rem;
   }
+
+/* MESSAGE */
 
   #message > .row {
     position: relative;
@@ -95,6 +117,8 @@ h2 {
     font-size: 1.3rem;
   }
 
+/* TIPS AND TOOLS */
+
   #tips-links > div {
     height: 17rem;
   }
@@ -102,8 +126,9 @@ h2 {
 }
 
 
-
 @media screen and (min-width: 1190px) {
+
+/* LARGE TOP BAR */
 
   #large-topbar li {
     font-size: 1.5rem;

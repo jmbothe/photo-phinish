@@ -2,7 +2,7 @@
 
 
 /* *******************************************************************
-MULTI
+GLOABL-ISH
 ******************************************************************* */
 
 
@@ -24,23 +24,27 @@ p, a, span, li {
   color: hsl(290, 6%, 18%);
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 h2 {
   font-size: 1.75rem;
 }
 
 
 /* *******************************************************************
-OFF CANVAS BAR
+OFF CANVAS MENU
 ******************************************************************* */
 
 
 #offCanvas ul {
-  background-image: linear-gradient(hsl(290,6%,45%), hsl(290,6%,45%) 16.66%, hsl(290,6%,40%) 16.67%, hsl(290,6%,40%) 33.32%, hsl(290,6%,35%) 33.33%, hsl(290,6%,35%) 50%, hsl(290,6%,30%) 50.01%, hsl(290,6%,30%) 66.66%, hsl(290,6%,25%) 66.67%, hsl(290,6%,25%) 83.33%, hsl(290,6%,18%) 83.34%, hsl(290, 6%, 18%));
-  height: 100%;
   justify-content: space-around;
   align-items: center;
+  height: 100%;
   margin: 0;
   list-style: none;
+  background-image: linear-gradient(hsl(290,6%,45%), hsl(290,6%,45%) 16.66%, hsl(290,6%,40%) 16.67%, hsl(290,6%,40%) 33.32%, hsl(290,6%,35%) 33.33%, hsl(290,6%,35%) 50%, hsl(290,6%,30%) 50.01%, hsl(290,6%,30%) 66.66%, hsl(290,6%,25%) 66.67%, hsl(290,6%,25%) 83.33%, hsl(290,6%,18%) 83.34%, hsl(290, 6%, 18%));
 }
 
 #offCanvas li {
@@ -61,29 +65,32 @@ OFF CANVAS BAR
   outline: none;
 }
 
+
 /* *******************************************************************
 MOBILE TOP BAR
 ******************************************************************* */
 
+
 #mobile-bar {
   padding: 0 0 0 .5rem;
+  color: #fefefe;
+  background-color: hsl(290, 6%, 18%);
 }
 
 #mobile-bar .top-bar-title {
-    font-family: orbitron;
-    text-transform: uppercase;
-    margin-right: 0;
+  margin-right: 0;
+}
+
+#mobile-bar .top-bar-title strong {
+  font-family: orbitron;
+  text-transform: uppercase;
+  color: #fefefe;
 }
 
 #mobile-bar .top-bar-right {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-}
-
-#mobile-bar {
-  background-color: hsl(290, 6%, 18%);
-  color: #fefefe;
 }
 
 #mobile-bar ul {
@@ -95,7 +102,7 @@ MOBILE TOP BAR
 }
 
 #mobile-bar ul li a {
-    padding: 1rem .5rem;
+  padding: 1rem .5rem;
   color: #fefefe;
 }
 
@@ -106,7 +113,7 @@ LARGE TOP BAR
 
 
 #large-topbar {
-  z-index: 30;
+  z-index: 11;
 }
 
 .topbar-sticky-shrink {
@@ -130,11 +137,11 @@ LARGE TOP BAR
 }
 
 .top-bar h2 {
+  margin-bottom: 0;
   font-family: orbitron;
   text-transform: uppercase;
   color: #fefefe;
   text-shadow: 1px 1px 3px #0a0a0a;
-  margin-bottom: 0;
 }
 
 .topbar-sticky-shrink {
@@ -152,23 +159,23 @@ LARGE TOP BAR UNDERLINING CSS
 
 
 .menu-hover-lines {
+  height: 100%;
   text-align: center;
   letter-spacing: 1px;
   transition: all 0.35s ease;
-  height: 100%;
 }
 
 .menu-hover-lines li {
-  height: 100%;
   position: relative;
+  height: 100%;
 }
 
 .menu-hover-lines li a {
+  position: relative;
   height: 100%;
+  margin-left: 0rem;
   padding: 0.75rem 0 .75rem 1rem;
   color: #fefefe;
-  position: relative;
-  margin-left: 0rem;
   line-height: 3rem;
 }
 
@@ -182,12 +189,12 @@ LARGE TOP BAR UNDERLINING CSS
 
 .menu-hover-lines a:before,
 .menu-hover-lines a::after {
-  height: 3px;
   position: absolute;
-  content: '';
-  transition: all 0.35s ease;
-  background-color: #daad86;
+  height: 3px;
   width: 0;
+  content: '';
+  background-color: #daad86;
+  transition: all 0.35s ease;
 }
 
 .menu-hover-lines a::before {
@@ -220,14 +227,14 @@ HERO
 
 
 #hero {
-  background-image: linear-gradient(hsla(28, 53%, 69%,.3), hsla(28, 53%, 69%,.3)), url(../images/brush02.jpg);
-  background-position: center, bottom;
-  background-size: cover, cover;
-  height: 30rem;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 30rem;
+  text-align: center;
+  background-image: linear-gradient(hsla(28, 53%, 69%,.3), hsla(28, 53%, 69%,.3)), url(../images/brush02.jpg);
+  background-position: center, bottom;
+  background-size: cover, cover;
 }
 
 #hero-text h1, #hero-text h3 {
@@ -237,161 +244,29 @@ HERO
   text-shadow: 1px 1px 3px #0a0a0a;
 }
 
-h1 {
-  font-size: 3rem;
-}
-
 
 /* *******************************************************************
-PITCH
+ABOUT
 ******************************************************************* */
 
 
-
-/* *******************************************************************
-WHY CHOOSE
-******************************************************************* */
-
-
-#why {
-  color: hsl(290, 6%, 18%);
+#pitch-screenread {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
-#reasons > div {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 2rem;
-}
-
-#reasons i {
-  z-index: 1;
-  float: left;
-  display: block;
-  padding-right: 1rem;
-  line-height: 0;
-  color: hsl(290, 6%, 18%);
-  font-size: 3rem;
-  transition: 300s;
-}
-
-#reasons > div > span {
-  width: 100%;
-  padding-bottom: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  display: block;
-  transition: 300s;
-}
-
-
-/* *******************************************************************
-REASONS ANIMATION
-******************************************************************* */
-
-
-#reasons > div {
-  position: relative;
-}
-
-#reasons > div > span::after {
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  top: 0;
-  content: " ";
-  width: 0;
-  height: 100%;
-  transition: 300s;
-}
-
-/* ***** B1 *******/
-
-#b1:hover {
-  transform: rotate(25deg);
-  color: hsl(200, 100%, 50%);
-  transition: .4s;
-}
-
-#b1:hover + span::after  {
-  width: 100%;
-background-color:	hsl(200, 100%, 80%);
-transition: 1s;
-}
-
-/* ***** B2 *******/
-
-#b2:hover {
-  transform: rotate(25deg);
-  color: hsl(170, 100%, 43%);
-  transition: .4s;
-}
-
-#b2:hover + span::after  {
-  width: 100%;
-background-color: hsl(170, 100%, 73%);
-transition: 1s;
-}
-
-/* ***** B3 *******/
-
-#b3:hover {
-  transform: rotate(25deg);
-  color: hsl(140, 100%, 37%);
-  transition: .4s;
-}
-
-#b3:hover + span::after  {
-  width: 100%;
-background-color:	hsl(140, 100%, 67%);
-transition: 1s;
-}
-
-/* ***** B4 *******/
-
-#b4:hover {
-  transform: rotate(25deg);
-  color: hsl(110, 100%, 31%);
-  transition: .4s;
-}
-
-#b4:hover + span::after  {
-  width: 100%;
-background-color: hsl(110, 100%, 61%);
-transition: 1s;
-}
-
-/* ***** B5 *******/
-
-#b5:hover {
-  transform: rotate(25deg);
-  color: hsl(75, 100%, 25%);
-  transition: .4s;
-}
-
-#b5:hover + span::after  {
-  width: 100%;
-background-color: hsl(75, 100%, 55%);
-transition: 1s;
-}
-
-/* ***** B6 *******/
-
-#b6:hover {
-  transform: rotate(25deg);
-  color: hsl(60, 100%, 19%);
-  transition: .4s;
-}
-
-#b6:hover + span::after  {
-  width: 100%;
-background-color: hsl(60, 100%, 49%);
-transition: 1s;
-}
 
 /* *******************************************************************
 SERVICES
 ******************************************************************* */
 
+
+#services-screenread {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
 
 #services {
   padding: 3rem 0;
@@ -409,6 +284,12 @@ SERVICES
   color: #fefefe;
 }
 
+
+/* *******************************************************************
+SERVICES ACCORDION MENU
+******************************************************************* */
+
+
 .accordion-title {
   color: hsl(290, 6%, 18%);
   font-size: 1rem;
@@ -419,16 +300,166 @@ SERVICES
 }
 
 .accordion-title:hover, .accordion-title:focus {
-    background-color: hsl(28, 53%, 69%);
-    color: hsl(290, 6%, 18%);
-    border-left: 12px solid hsl(200, 94%, 79%);
-  }
+  background-color: hsl(28, 53%, 69%);
+  color: hsl(290, 6%, 18%);
+  border-left: 12px solid hsl(200, 94%, 79%);
+}
+
+
+/* *******************************************************************
+WHY CHOOSE
+******************************************************************* */
+
+
+#why-screenread {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+#why {
+  color: hsl(290, 6%, 18%);
+}
+
+#reasons > div {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+#reasons i {
+  display: block;
+  z-index: 1;
+  padding-right: 1rem;
+  font-size: 3rem;
+  line-height: 0;
+  color: hsl(290, 6%, 18%);
+  transition: 600s;
+}
+
+#reasons > div > span {
+  display: block;
+  width: 100%;
+  padding: 0 1rem 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: 600s;
+}
+
+
+/* *******************************************************************
+REASONS ANIMATION
+******************************************************************* */
+
+
+#reasons > div > span::after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transition: 300s;
+}
+
+/* ***** B1 *******/
+
+#b1:hover {
+  transform: rotate(25deg);
+  color: hsl(200, 100%, 50%);
+  transition: .4s;
+}
+
+#b1:hover + span::after  {
+  width: 100%;
+  background-color:	hsl(200, 100%, 80%);
+  transition: 1s;
+}
+
+/* ***** B2 *******/
+
+#b2:hover {
+  transform: rotate(25deg);
+  color: hsl(170, 100%, 43%);
+  transition: .4s;
+}
+
+#b2:hover + span::after  {
+  width: 100%;
+  background-color: hsl(170, 100%, 73%);
+  transition: 1s;
+}
+
+/* ***** B3 *******/
+
+#b3:hover {
+  transform: rotate(25deg);
+  color: hsl(140, 100%, 37%);
+  transition: .4s;
+}
+
+#b3:hover + span::after  {
+  width: 100%;
+  background-color:	hsl(140, 100%, 67%);
+  transition: 1s;
+}
+
+/* ***** B4 *******/
+
+#b4:hover {
+  transform: rotate(25deg);
+  color: hsl(110, 100%, 31%);
+  transition: .4s;
+}
+
+#b4:hover + span::after  {
+  width: 100%;
+  background-color: hsl(110, 100%, 61%);
+  transition: 1s;
+}
+
+/* ***** B5 *******/
+
+#b5:hover {
+  transform: rotate(25deg);
+  color: hsl(75, 100%, 25%);
+  transition: .4s;
+}
+
+#b5:hover + span::after  {
+  width: 100%;
+  background-color: hsl(75, 100%, 55%);
+  transition: 1s;
+}
+
+/* ***** B6 *******/
+
+#b6:hover {
+  transform: rotate(25deg);
+  color: hsl(60, 100%, 19%);
+  transition: .4s;
+}
+
+#b6:hover + span::after  {
+  width: 100%;
+  background-color: hsl(60, 100%, 49%);
+  transition: 1s;
+}
 
 
 /* *******************************************************************
 TESTIMONIALS
 ******************************************************************* */
 
+
+#testimonials-screenread {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
 
 #testimonials {
   padding: 3rem 0;
@@ -451,6 +482,12 @@ TESTIMONIALS
 #testimonials p {
   color: #fefefe;
 }
+
+
+/* *******************************************************************
+TESTIMONIALS IMAGE SLIDER
+******************************************************************* */
+
 
 .testimonial-slider-container {
   background: transparent;
@@ -539,43 +576,11 @@ MESSAGE
 
 
 #message-text {
-  border: 1px solid hsl(290, 6%, 18%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-
-/* *******************************************************************
-TIPS AND TOOLS
-******************************************************************* */
-
-
-#tips-links a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  height: 100%;
-}
-
-#tips-links > div {
-  height: 14rem;
-  border: 1px solid #fff;
-}
-
-#tips-links p {
-  color: #fefefe;
-}
-
-#tips-links > div:first-of-type {
-  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/sherwin.jpg);
-  background-size: cover;
-}
-
-#tips-links > div:nth-of-type(2) {
-  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/dunn.gif);
-  background-size: cover;
+  border: 1px solid hsl(290, 6%, 18%);
 }
 
 
@@ -584,13 +589,19 @@ VENDORS
 ******************************************************************* */
 
 
+#vendors-screenread {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 #vendors {
   padding: 3rem 0;
-    background: linear-gradient(hsla(28, 53%, 30%,.3), hsla(28, 53%, 69%,.3)), url("../images/brushes960.jpeg");
-    background-size: cover, cover;
-    background-repeat: no-repeat, no-repeat;
-    background-position: center, top;
-    color: #fefefe;
+  background: linear-gradient(hsla(28, 53%, 30%,.3), hsla(28, 53%, 69%,.3)), url("../images/brushes960.jpeg");
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, top;
+  color: #fefefe;
 }
 
 #vendors > div:first-of-type {
@@ -604,9 +615,56 @@ VENDORS
 
 
 /* *******************************************************************
+TIPS AND TOOLS
+******************************************************************* */
+
+
+#tips-screenread {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+#tips-links > div {
+  padding: 0;
+  height: 14rem;
+  border: 1px solid #fff;
+}
+
+#tips-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transition: .5s;
+}
+
+#tips-links p {
+  color: #fefefe;
+}
+
+a[href*="visualizer"] {
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/sherwin.jpg);
+  background-size: cover;
+}
+
+a[href*="dunnedwards"] {
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/dunn.gif);
+  background-size: cover;
+}
+
+
+/* *******************************************************************
 FOOTER
 ******************************************************************* */
 
+
+#footer-screenread {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
 
 #footer {
   background: hsl(290, 6%, 18%);
@@ -615,6 +673,10 @@ FOOTER
 
 #footer h2, #footer li {
   color: #fefefe;
+}
+
+#footer li {
+  margin-bottom: 1.5rem;
 }
 
 #footer i {
@@ -626,17 +688,13 @@ FOOTER
   padding: .1rem .5rem;
 }
 
-#footer .contact-us-section .contact-us-section-left {
-  border-color: #98dafc;
-}
-
-#footer li {
-  margin-bottom: 1.5rem;
-}
-
 #footer .button {
   background-color: #98dafc;
   color: hsl(290, 6%, 18%);
+}
+
+#footer .contact-us-section .contact-us-section-left {
+  border-color: #98dafc;
 }
 
 .contact-us-section {
@@ -718,4 +776,152 @@ FOOTER
   vertical-align: middle;
   color: #8a8a8a;
   font-family: 'FontAwesome';
+}
+
+
+/* *******************************************************************
+MEDIA QUERIES
+******************************************************************* */
+
+
+@media screen and (max-width: 39.999rem) {
+
+/* MOBILE TOP BAR */
+
+  .top-bar .top-bar-right {
+    flex: 0 1 auto;
+  }
+
+/* MESSAGE */
+
+  #message {
+    margin-top: 6rem!important;
+  }
+
+  #message .column:first-of-type {
+    padding: 0;
+  }
+
+}
+
+
+@media screen and (max-width: 963px) {
+
+/* LARGE TOP BAR */
+
+  #large-topbar .top-bar-title {
+    width: 3rem;
+  }
+
+  #large-topbar li {
+    font-size: .75rem;
+  }
+
+  #large-topbar .top-bar-title h2 {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+@media screen and (min-width: 40rem) {
+
+/* GLOBAL-ISH */
+
+  section:not(#hero) {
+    margin-top: 6rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.75rem;
+  }
+
+ #hero, #services, #testimonials, #vendors {
+   background-attachment: fixed;
+  }
+
+/* SERVICES ACCORDION MENU */
+
+  .accordion-title {
+    font-size: 1.5rem;
+  }
+
+  .accordion p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+/* TIPS AND TOOLS */
+
+  #tips-links a:hover {
+   background-position: bottom;
+   transition: .5s;
+  }
+
+  #tips-links a:hover p {
+   font-size: 1.6rem;
+   transition: .1s;
+  }
+
+}
+
+
+@media screen and (min-width: 964px) {
+
+/* GLOBAL-ISH */
+
+  h1 {
+    font-size: 4rem;
+  }
+
+/* LARGE TOP BAR */
+
+  #large-topbar li {
+    font-size: 1.1rem;
+  }
+
+  #large-topbar .top-bar-title h2 {
+    font-size: 2.1rem;
+  }
+
+/* MESSAGE */
+
+  #message > .row {
+    position: relative;
+    align-items: center;
+  }
+
+  #message-text {
+    background-color: #fff;
+    position: absolute;
+    left: 26rem;
+    font-size: 1.3rem;
+  }
+
+/* TIPS AND TOOLS */
+
+  #tips-links > div {
+    height: 17rem;
+  }
+
+}
+
+
+@media screen and (min-width: 1190px) {
+
+/* LARGE TOP BAR */
+
+  #large-topbar li {
+    font-size: 1.5rem;
+  }
+
+  #large-topbar .top-bar-title h2 {
+    font-size: 2.5rem;
+  }
+
 }
