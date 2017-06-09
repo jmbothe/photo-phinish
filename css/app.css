@@ -252,22 +252,157 @@ WHY CHOOSE
   justify-content: space-around;
 }
 
-#reasons > div:not(:last-of-type) {
-  padding-bottom: 2rem;
-}
-
 #reasons i {
+  z-index: 2;
+  float: left;
   display: block;
+  padding-top: 2rem;
+  padding-right: 1rem;
   line-height: 0;
   color: hsl(290, 6%, 18%);
   font-size: 3rem;
+  transition: .5s 180s;
 }
 
 #reasons span {
-  margin-left: 2rem;
+  padding: 2rem 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: block;
+  transition: .5s 180s;
 }
 
+
+/* *******************************************************************
+REASONS ANIMATION
+******************************************************************* */
+
+
+#reasons > div {
+  position: relative;
+}
+
+#reasons span::before {
+  z-index: 1;
+  position: absolute;
+  left: -.9375rem;
+  top: 0;
+  content: " ";
+  width: 5.4375rem;
+  height: 100%;
+
+  transition: .5s 180s;
+
+}
+
+/****** B1 ********/
+
+#b1:hover {
+  transform: rotate(25deg);
+  color: #8bfced;
+  transition: .5s;
+}
+
+#b1:hover + span::before  {
+background-color: #98dafc;
+transition: .5s;
+}
+
+#b1:hover ~ span {
+background-color: #98dafc;
+transition: .5s;
+}
+
+/****** B2 ********/
+
+#b2:hover {
+  transform: rotate(25deg);
+  color: #7ffcb0;
+  transition: .5s;
+}
+
+#b2:hover + span::before  {
+background-color: #8bfced;
+transition: .5s;
+}
+
+#b2:hover ~ span {
+background-color: #8bfced;
+transition: .5s;
+}
+
+/****** B3 ********/
+
+#b3:hover {
+  transform: rotate(25deg);
+  color: #7cfc72;
+  transition: .5s;
+}
+
+#b3:hover + span::before  {
+background-color: #7ffcb0;
+transition: .5s;
+}
+
+#b3:hover ~ span {
+background-color: #7ffcb0;
+transition: .5s;
+}
+
+/****** B4 ********/
+
+#b4:hover {
+  transform: rotate(25deg);
+  color: #b8fd65;
+  transition: .5s;
+}
+
+#b4:hover + span::before {
+background-color: #7cfc72;
+transition: .5s;
+}
+
+#b4:hover ~ span {
+background-color: #7cfc72;
+transition: .5s;
+}
+
+/****** B5 ********/
+
+#b5:hover {
+  transform: rotate(25deg);
+  color: #fdfa59;
+  transition: .5s;
+}
+
+#b5:hover + span::before {
+background-color: #b8fd65;
+transition: .5s;
+}
+
+#b5:hover ~ span {
+background-color: #b8fd65;
+transition: .5s;
+}
+
+/****** B6 ********/
+
+#b6:hover {
+  transform: rotate(25deg);
+  color: #fda74c;
+  transition: .5s;
+}
+
+#b6:hover + span::before  {
+background-color: #fdfa59;
+transition: .5s;
+}
+
+#b6:hover ~ span {
+background-color: #fdfa59;
+transition: .5s;
+}
 
 /* *******************************************************************
 SERVICES
