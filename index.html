@@ -24,40 +24,40 @@ OFF-CANVAS MENU
 
   <div class="off-canvas position-left" id="offCanvas" data-transition="overlap" data-off-canvas>
 
-    <ul class="flex-container flex-dir-column">
+    <ul class="flex-container flex-dir-column" data-magellan data-animation-duration="1500" data-animation-easing="swing">
 
       <li>
-        <a href="#pitch-anchor" aria-label="Close menu" data-close>
+        <a href="#pitch" aria-label="Close menu" data-close>
           About
         </a>
       </li>
 
       <li>
-        <a href="#services-anchor" aria-label="Close menu" data-close>
+        <a href="#services" aria-label="Close menu" data-close>
           Services
         </a>
       </li>
 
       <li>
-        <a href="#testimonials-anchor" aria-label="Close menu" data-close>
+        <a href="#testimonials" aria-label="Close menu" data-close>
           Testimonials
         </a>
       </li>
 
       <li>
-        <a href="#vendors-anchor" aria-label="Close menu" data-close>
+        <a href="#vendors" aria-label="Close menu" data-close>
           Vendors
         </a>
       </li>
 
       <li>
-        <a href="#tips-anchor" aria-label="Close menu" data-close>
+        <a href="#tips" aria-label="Close menu" data-close>
           Tips &#38; Tools
         </a>
       </li>
 
       <li>
-        <a href="#footer-anchor" aria-label="Close menu" data-close>
+        <a href="#footer" aria-label="Close menu" data-close>
           Contact
         </a>
       </li>
@@ -86,8 +86,8 @@ MOBILE TOP BAR
       <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
         <div class="top-bar" id="mobile-bar">
 
-          <div class="top-bar-title">
-            <a href="#hero" class="scroll">
+          <div class="top-bar-title" data-magellan data-animation-duration="1500" data-animation-easing="swing">
+            <a href="#hero">
               <strong>
               Photo Phinish
               </strong>
@@ -139,7 +139,7 @@ MOBILE TOP BAR
 HERO
 ************************************************** -->
 
-    <section id="hero">
+    <section id="hero" data-magellan-target="hero">
 
       <div id="hero-text">
 
@@ -166,8 +166,8 @@ LARGE SCREEN TOP BAR
       <div data-sticky data-margin-top='0' data-top-anchor="top-bar-anchor:bottom" data-btm-anchor="ocw:bottom">
         <div class="top-bar topbar-sticky-shrink">
 
-          <div class="top-bar-title">
-            <a href="#hero" class="scroll">
+          <div class="top-bar-title" data-magellan data-animation-duration="1500" data-animation-easing="swing">
+            <a href="#hero">
               <h2>
               Photo Phinish
             </h2>
@@ -176,39 +176,39 @@ LARGE SCREEN TOP BAR
 
           <div class="top-bar-right">
 
-            <ul class="menu menu-hover-lines align-center">
+            <ul class="menu menu-hover-lines align-center" data-magellan data-bar-offset="100" data-animation-duration="1500" data-animation-easing="swing" data-active-class="magellan-active">
               <li>
-                <a href="#pitch-anchor" class="scroll">
+                <a href="#pitch">
                   About
                 </a>
               </li>
 
               <li>
-                <a href="#services-anchor" class="scroll">
+                <a href="#services">
                   Services
                 </a>
               </li>
 
               <li>
-                <a href="#testimonials-anchor" class="scroll">
+                <a href="#testimonials">
                   Testimonials
                 </a>
               </li>
 
               <li>
-                <a href="#vendors-anchor" class="scroll">
+                <a href="#vendors">
                   Vendors
                 </a>
               </li>
 
               <li>
-                <a href="#tips-anchor" class="scroll">
+                <a href="#tips">
                   Tips &#38; Tools
                 </a>
               </li>
 
               <li>
-                <a href="#footer-anchor" class="scroll">
+                <a href="#footer">
                   Contact
                 </a>
               </li>
@@ -227,14 +227,9 @@ PITCH
 **************************************************** -->
 
 
-    <div id="pitch-anchor">
-    </div>
+    <section id="pitch" data-magellan-target="pitch">
 
-<br>
-
-    <section id="pitch">
-
-      <h2 id="pitch-screenread">About Photo Phinish</h2><!-- hidden from view. for screen readers only -->
+      <h2 class="show-for-sr">About Photo Phinish</h2><!-- hidden from view. for screen readers only -->
 
       <div class="row" id="pitch-main">
         <div class="column">
@@ -253,14 +248,9 @@ SERVICES
 **************************************************** -->
 
 
-    <div id="services-anchor">
-    </div>
+    <section id="services" data-magellan-target="services">
 
-<br>
-
-    <section id="services">
-
-      <h2 id="services-screenread">Services</h2><!-- hidden from view. for screen readers only -->
+      <h2 class="show-for-sr">Services</h2><!-- hidden from view. for screen readers only -->
 
       <div>
         <div class="row">
@@ -361,7 +351,7 @@ WHY CHOOSE
 
     <section>
 
-      <h2 id="why-screenread">Why you should choose Photo Phinish</h2><!-- hidden from view. for screen readers only -->
+      <h2 class="show-for-sr">Why you should choose Photo Phinish</h2><!-- hidden from view. for screen readers only -->
 
       <div id="why">
         <div class="row">
@@ -435,14 +425,9 @@ TESTIMONIALS
 **************************************************** -->
 
 
-    <div id="testimonials-anchor">
-    </div>
+    <section id="testimonials" data-magellan-target="testimonials">
 
-<br>
-
-    <section id="testimonials">
-
-      <h2 id="testimonials-screenread">Testimonials from Happy Customers</h2><!-- hidden from view. for screen readers only -->
+      <h2 class="show-for-sr">Testimonials from Happy Customers</h2><!-- hidden from view. for screen readers only -->
 
       <div>
         <div class="row">
@@ -634,14 +619,9 @@ PREFERED VENDORS
 **************************************************** -->
 
 
-    <div id="vendors-anchor">
-    </div>
+    <section id="vendors" data-magellan-target="vendors">
 
-<br>
-
-    <section id="vendors">
-
-      <h2 id="vendors-screenread">Recommended home-improvement vendors</h2><!-- hidden from view. for screen readers only -->
+      <h2 class="show-for-sr">Recommended home-improvement vendors</h2><!-- hidden from view. for screen readers only -->
 
       <div>
         <div class="row">
@@ -697,14 +677,9 @@ TIPS AND TOOLS
 **************************************************** -->
 
 
-    <div id="tips-anchor">
-    </div>
+    <section id="tips" data-magellan-target="tips">
 
-<br>
-
-    <section id="tips">
-
-      <h2 id="tips-screenread">home improvement tips and tools</h2><!-- hidden from view. for screen readers only -->
+      <h2 class="show-for-sr">home improvement tips and tools</h2><!-- hidden from view. for screen readers only -->
 
       <div class="row">
         <div class="column">
@@ -752,14 +727,9 @@ FOOTER
 **************************************************** -->
 
 
-    <div id="footer-anchor">
-    </div>
+    <footer class="responsive-blog-footer" id="footer" data-magellan-target="footer">
 
-<br>
-
-    <h2 id="footer-screenread">Contact information</h2><!-- hidden from view. for screen readers only --> 
-
-    <footer class="responsive-blog-footer" id="footer">
+      <h2 class="show-for-sr">Contact information</h2><!-- hidden from view. for screen readers only -->
 
       <section class="contact-us-section">
         <div class="row medium-unstack">

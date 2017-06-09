@@ -174,7 +174,7 @@ LARGE TOP BAR UNDERLINING CSS
   position: relative;
   height: 100%;
   margin-left: 0rem;
-  padding: 0.75rem 0 .75rem 1rem;
+  padding: 0.75rem .5rem;
   color: #fefefe;
   line-height: 3rem;
 }
@@ -220,6 +220,11 @@ LARGE TOP BAR UNDERLINING CSS
   width: 100%;
 }
 
+.magellan-active {
+  color: #98dafc!important;
+  font-weight: bold!important;
+}
+
 
 /* *******************************************************************
 HERO
@@ -250,23 +255,13 @@ ABOUT
 ******************************************************************* */
 
 
-#pitch-screenread {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-}
+
 
 
 /* *******************************************************************
 SERVICES
 ******************************************************************* */
 
-
-#services-screenread {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-}
 
 #services {
   padding: 3rem 0;
@@ -310,12 +305,6 @@ SERVICES ACCORDION MENU
 WHY CHOOSE
 ******************************************************************* */
 
-
-#why-screenread {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-}
 
 #why {
   color: hsl(290, 6%, 18%);
@@ -455,12 +444,6 @@ TESTIMONIALS
 ******************************************************************* */
 
 
-#testimonials-screenread {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
 #testimonials {
   padding: 3rem 0;
   background: linear-gradient(hsla(28, 53%, 30%,.4), hsla(28, 53%, 30%,.4)), url("../images/brett-and-chris.jpg");
@@ -589,12 +572,6 @@ VENDORS
 ******************************************************************* */
 
 
-#vendors-screenread {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
 #vendors {
   padding: 3rem 0;
   background: linear-gradient(hsla(28, 53%, 30%,.3), hsla(28, 53%, 69%,.3)), url("../images/brushes960.jpeg");
@@ -618,12 +595,6 @@ VENDORS
 TIPS AND TOOLS
 ******************************************************************* */
 
-
-#tips-screenread {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-}
 
 #tips-links > div {
   padding: 0;
@@ -659,12 +630,6 @@ a[href*="dunnedwards"] {
 FOOTER
 ******************************************************************* */
 
-
-#footer-screenread {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-}
 
 #footer {
   background: hsl(290, 6%, 18%);
