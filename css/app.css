@@ -38,12 +38,38 @@ OFF CANVAS BAR
   background-color: hsl(290, 6%, 18%);
 }
 
+#offCanvas ul {
+  background-image: linear-gradient(hsl(290,6%,45%), hsl(290,6%,45%) 16.66%, hsl(290,6%,40%) 16.67%, hsl(290,6%,40%) 33.32%, hsl(290,6%,35%) 33.33%, hsl(290,6%,35%) 50%, hsl(290,6%,30%) 50.01%, hsl(290,6%,30%) 66.66%, hsl(290,6%,25%) 66.67%, hsl(290,6%,25%) 83.33%, hsl(290,6%,18%) 83.34%, hsl(290, 6%, 18%));
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+}
+
+#offCanvas li {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 #offCanvas a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 12vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   color: #fefefe;
+  padding-left: 0!important;
 }
 
 #offCanvas a:hover, #offCanvas a:active {
-  background-color: hsl(290, 6%, 25%);
+  background-color: hsla(1, 1%, 1%, .25);
   border-style: none;
 }
 
@@ -155,15 +181,15 @@ LARGE TOP BAR UNDERLINING CSS
 
 .menu-hover-lines li a {
   height: 100%;
-  padding: 0.75rem 0;
+  padding: 0.75rem 0 .75rem 1rem;
   color: #fefefe;
   position: relative;
-  margin-left: 1rem;
+  margin-left: 0rem;
   line-height: 3rem;
 }
 
 .menu-hover-lines li:first-child a {
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .menu-hover-lines li.active > a {
@@ -192,7 +218,7 @@ LARGE TOP BAR UNDERLINING CSS
 
 .menu-hover-lines a:hover,
 .menu-hover-lines li.active > a {
-  color: #daad86;
+  color: #98dafc;
   transition: all 0.35s ease;
 }
 
@@ -250,28 +276,27 @@ WHY CHOOSE
 #reasons > div {
   display: flex;
   justify-content: space-around;
+  padding-top: 2rem;
 }
 
 #reasons i {
-  z-index: 2;
+  z-index: 1;
   float: left;
   display: block;
-  padding-top: 2rem;
   padding-right: 1rem;
   line-height: 0;
   color: hsl(290, 6%, 18%);
   font-size: 3rem;
-  transition: .5s 180s;
+  transition: 300s;
 }
 
-#reasons span {
+#reasons > div > span {
   width: 100%;
-  padding: 2rem 1rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   display: block;
-  transition: .5s 180s;
+  transition: 300s;
 }
 
 
@@ -284,165 +309,99 @@ REASONS ANIMATION
   position: relative;
 }
 
-#reasons span::before {
-  z-index: 1;
+#reasons > div > span::after {
+  z-index: -1;
   position: absolute;
-  left: -.9375rem;
+  left: 0;
   top: 0;
   content: " ";
-  width: 5.4375rem;
+  width: 0;
   height: 100%;
-  transition: .5s 180s;
+  transition: 300s;
 }
 
-#reasons span::after {
-  z-index: 1;
-  position: absolute;
-  right: 0;
-  top: 0;
-  content: " ";
-  width: .9375rem;
-  height: 100%;
-  transition: .5s 180s;
-  background-color: transparent;
-}
-
-/****** B1 ********/
+/* ***** B1 *******/
 
 #b1:hover {
   transform: rotate(25deg);
-  color: #8bfced;
-  transition: .5s;
-}
-
-#b1:hover + span::before  {
-background-color: #98dafc;
-transition: .5s;
+  color: hsl(200, 100%, 50%);
+  transition: .4s;
 }
 
 #b1:hover + span::after  {
-background-color: #98dafc;
-transition: .5s;
+  width: 100%;
+background-color:	hsl(200, 100%, 80%);
+transition: 1s;
 }
 
-#b1:hover ~ span {
-background-color: #98dafc;
-transition: .5s;
-}
-
-/****** B2 ********/
+/* ***** B2 *******/
 
 #b2:hover {
   transform: rotate(25deg);
-  color: #7ffcb0;
-  transition: .5s;
-}
-
-#b2:hover + span::before  {
-background-color: #8bfced;
-transition: .5s;
+  color: hsl(170, 100%, 43%);
+  transition: .4s;
 }
 
 #b2:hover + span::after  {
-background-color: #8bfced;
-transition: .5s;
+  width: 100%;
+background-color: hsl(170, 100%, 73%);
+transition: 1s;
 }
 
-#b2:hover ~ span {
-background-color: #8bfced;
-transition: .5s;
-}
-
-/****** B3 ********/
+/* ***** B3 *******/
 
 #b3:hover {
   transform: rotate(25deg);
-  color: #7cfc72;
-  transition: .5s;
-}
-
-#b3:hover + span::before  {
-background-color: #7ffcb0;
-transition: .5s;
+  color: hsl(140, 100%, 37%);
+  transition: .4s;
 }
 
 #b3:hover + span::after  {
-background-color: #7ffcb0;
-transition: .5s;
+  width: 100%;
+background-color:	hsl(140, 100%, 67%);
+transition: 1s;
 }
 
-#b3:hover ~ span {
-background-color: #7ffcb0;
-transition: .5s;
-}
-
-/****** B4 ********/
+/* ***** B4 *******/
 
 #b4:hover {
   transform: rotate(25deg);
-  color: #b8fd65;
-  transition: .5s;
-}
-
-#b4:hover + span::before {
-background-color: #7cfc72;
-transition: .5s;
+  color: hsl(110, 100%, 31%);
+  transition: .4s;
 }
 
 #b4:hover + span::after  {
-background-color: #7cfc72;
-transition: .5s;
+  width: 100%;
+background-color: hsl(110, 100%, 61%);
+transition: 1s;
 }
 
-#b4:hover ~ span {
-background-color: #7cfc72;
-transition: .5s;
-}
-
-/****** B5 ********/
+/* ***** B5 *******/
 
 #b5:hover {
   transform: rotate(25deg);
-  color: #fdfa59;
-  transition: .5s;
-}
-
-#b5:hover + span::before {
-background-color: #b8fd65;
-transition: .5s;
+  color: hsl(75, 100%, 25%);
+  transition: .4s;
 }
 
 #b5:hover + span::after  {
-background-color: #b8fd65;
-transition: .5s;
+  width: 100%;
+background-color: hsl(75, 100%, 55%);
+transition: 1s;
 }
 
-#b5:hover ~ span {
-background-color: #b8fd65;
-transition: .5s;
-}
-
-/****** B6 ********/
+/* ***** B6 *******/
 
 #b6:hover {
   transform: rotate(25deg);
-  color: #fda74c;
-  transition: .5s;
-}
-
-#b6:hover + span::before  {
-background-color: #fdfa59;
-transition: .5s;
+  color: hsl(60, 100%, 19%);
+  transition: .4s;
 }
 
 #b6:hover + span::after  {
-background-color: #fdfa59;
-transition: .5s;
-}
-
-#b6:hover ~ span {
-background-color: #fdfa59;
-transition: .5s;
+  width: 100%;
+background-color: hsl(60, 100%, 49%);
+transition: 1s;
 }
 
 /* *******************************************************************
