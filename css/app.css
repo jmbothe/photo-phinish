@@ -34,13 +34,9 @@ OFF CANVAS BAR
 ******************************************************************* */
 
 
-#offCanvas {
-  background-color: hsl(290, 6%, 18%);
-}
-
 #offCanvas ul {
   background-image: linear-gradient(hsl(290,6%,45%), hsl(290,6%,45%) 16.66%, hsl(290,6%,40%) 16.67%, hsl(290,6%,40%) 33.32%, hsl(290,6%,35%) 33.33%, hsl(290,6%,35%) 50%, hsl(290,6%,30%) 50.01%, hsl(290,6%,30%) 66.66%, hsl(290,6%,25%) 66.67%, hsl(290,6%,25%) 83.33%, hsl(290,6%,18%) 83.34%, hsl(290, 6%, 18%));
-  height: 100vh;
+  height: 100%;
   justify-content: space-around;
   align-items: center;
   margin: 0;
@@ -58,7 +54,7 @@ OFF CANVAS BAR
   font-size: 1.4rem;
   font-weight: bold;
   text-align: center;
-  line-height: 12vh;
+  line-height: 16vh;
   position: absolute;
   top: 0;
   bottom: 0;
